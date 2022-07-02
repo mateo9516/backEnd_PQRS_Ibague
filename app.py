@@ -17,6 +17,7 @@ def obtenerDf():
     cur = conexion.cursor()
     cur.execute('SELECT * FROM pqr_radicacions;')
     pqrs_raw = cur.fetchall()
+
     for pqr in pqrs_raw:
         result = {
             'id': pqr[0], 
@@ -49,7 +50,7 @@ def obtenerDf():
             'amisalud_id':pqr[27],
             'nombre_completo':pqr[28],
             'fecha_nacimiento':pqr[29],
-
+            'fecha_respuesta':pqr[30],
         }
         pqrs.append(result)
     return jsonify(pqrs)
