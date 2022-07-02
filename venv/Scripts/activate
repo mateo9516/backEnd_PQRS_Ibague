@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Mateo\Documents\proyecto DS4A\back-end\venv"
+VIRTUAL_ENV="C:\Users\Mateo\Documents\proyecto DS4A\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
