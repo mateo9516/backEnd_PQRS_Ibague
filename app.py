@@ -51,6 +51,8 @@ def obtenerDf():
             'nombre_completo':pqr[28],
             'fecha_nacimiento':pqr[29],
             'fecha_respuesta':pqr[30],
+            'Latitud': pqr[31],
+            'Longitud': pqr[32],
         }
         pqrs.append(result)
     return jsonify(pqrs)
