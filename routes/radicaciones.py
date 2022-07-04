@@ -8,7 +8,6 @@ main = Blueprint("radicaciones_bp", __name__)
 @main.route('/')
 def get_radicaciones():
     try:
-        print('aqui voy en el py')
         pqrs = radicacionesModel.get_radicaciones()
         return jsonify(pqrs)
     except Exception as ex:
