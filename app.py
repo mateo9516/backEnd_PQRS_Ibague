@@ -53,6 +53,15 @@ def obtenerDf():
             'fecha_respuesta':pqr[30],
             'Latitud': pqr[31],
             'Longitud': pqr[32],
+            'estado_respuesta':pqr[33],
+            'estado_tiempo':pqr[34],
+            'glb_tipo_genero_id':pqr[35],
+            'glb_entidad_id':pqr[36],
+            'barrio':pqr[37],
+            'vereda':pqr[38],
+            'suelo':pqr[39],
+            'comuna':pqr[40],
+
         }
         pqrs.append(result)
     return jsonify(pqrs)
